@@ -1,0 +1,1 @@
+g++ -o "/home/liupei/projects/HttpServer/bin/x64/Debug/HttpServer.out" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /home/liupei/projects/HttpServer/obj/x64/Debug/main.o /home/liupei/projects/HttpServer/obj/x64/Debug/server.o

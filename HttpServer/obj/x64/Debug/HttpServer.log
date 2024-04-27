@@ -1,0 +1,34 @@
+﻿  正在验证源
+  正在将源远程复制到“192.168.27.131”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  main.c
+  server.c
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(226,15): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(226,15): warning :   226 |         ret = send(cfd, buf, strlen(buf), 0);
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(226,15): warning :       |               ^~~~
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(296,19): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(296,19): warning :   296 |     while ((len = read(fd, buf, sizeof(buf))) > 0) {
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(296,19): warning :       |                   ^~~~
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(298,30): warning : conversion to ‘size_t’ {aka ‘long unsigned int’} from ‘int’ may change the sign of the result [-Wsign-conversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(298,30): warning :   298 |         ret = send(cfd, buf, len, 0);
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(298,30): warning :       |                              ^~~
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(298,15): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(298,15): warning :   298 |         ret = send(cfd, buf, len, 0);
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(298,15): warning :       |               ^~~~
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(329,13): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(329,13): warning :   329 |         n = recv(sock, &c, 1, 0);
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(329,13): warning :       |             ^~~~
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(332,21): warning : conversion from ‘ssize_t’ {aka ‘long int’} to ‘int’ may change value [-Wconversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(332,21): warning :   332 |                 n = recv(sock, &c, 1, MSG_PEEK);
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(332,21): warning :       |                     ^~~~
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(399,27): warning : conversion from ‘int’ to ‘uint16_t’ {aka ‘short unsigned int’} may change value [-Wconversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(399,27): warning :   399 |     serv.sin_port = htons(port);
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(399,27): warning :       |                           ^~~~
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(474,19): warning : conversion from ‘int’ to ‘char’ may change value [-Wconversion]
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(474,19): warning :   474 |             *to = hexit(from[1]) * 16 + hexit(from[2]);
+C:\Users\12964\Desktop\HttpServer\HttpServer\server.c(474,19): warning :       |                   ^~~~~
+  正在链接对象
+  HttpServer.vcxproj -> C:\Users\12964\Desktop\HttpServer\HttpServer\bin\x64\Debug\HttpServer.out
